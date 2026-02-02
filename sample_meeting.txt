@@ -1,0 +1,11 @@
+Ata de Reunião - Projeto Fênix - 30/01/2026
+
+Participantes: João, Maria, Pedro.
+
+Discussão:
+João mencionou que o banco de dados está lento. Maria sugeriu migrar para PostgreSQL. Pedro concordou em pesquisar sobre a migração.
+
+Ações:
+1. João: Otimizar as queries atuais do MySQL até 05/02/2026. Prioridade alta.
+2. Maria: Criar um plano de migração para PostgreSQL até 10/02/2026.
+3. Pedro: Pesquisar custos de instâncias gerenciadas.

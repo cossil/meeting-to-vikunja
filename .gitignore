@@ -1,0 +1,21 @@
+# Security (CRITICAL)
+.env
+.env.local
+secrets.toml
+
+# Python / Environment
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Local Data & Backups
+Docs/
+*.log
+
+# Streamlit
+.streamlit/
+
+# OS specific
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+streamlit
+google-genai
+pandas
+thefuzz
+python-docx
+python-dotenv
+requests
+tabulate
