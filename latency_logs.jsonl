@@ -1,0 +1,81 @@
+{"timestamp": "2026-02-03T11:47:35.364497", "event_type": "TTS Generation", "duration_ms": 2863.01, "char_count": 59}
+{"timestamp": "2026-02-03T11:48:13.322437", "event_type": "Gemini Logic Processing", "duration_ms": 16930.81, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T11:48:13.323444", "event_type": "Total Turn Time", "duration_ms": 16933.35, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T11:48:33.374772", "event_type": "TTS Generation", "duration_ms": 20048.82, "char_count": 83}
+{"timestamp": "2026-02-03T11:49:11.015215", "event_type": "Gemini Logic Processing", "duration_ms": 13727.11, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T11:49:11.015215", "event_type": "Total Turn Time", "duration_ms": 13728.16, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T12:35:00.895741", "event_type": "TTS Generation", "duration_ms": 2820.58, "char_count": 59}
+{"timestamp": "2026-02-03T12:35:19.621227", "event_type": "Gemini Logic Processing", "duration_ms": 5682.47, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T12:35:19.621920", "event_type": "Total Turn Time", "duration_ms": 5684.2, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T12:35:22.817614", "event_type": "TTS Generation", "duration_ms": 3194.19, "char_count": 63}
+{"timestamp": "2026-02-03T12:35:47.646668", "event_type": "Gemini Logic Processing", "duration_ms": 7314.9, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T12:35:47.646668", "event_type": "Total Turn Time", "duration_ms": 7316.95, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T12:35:54.207122", "event_type": "TTS Generation", "duration_ms": 6557.38, "char_count": 108}
+{"timestamp": "2026-02-03T12:36:23.435223", "event_type": "Gemini Logic Processing", "duration_ms": 7270.38, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T12:36:23.435426", "event_type": "Total Turn Time", "duration_ms": 7271.54, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T12:37:22.246526", "event_type": "TTS Generation", "duration_ms": 58808.94, "char_count": 58}
+{"timestamp": "2026-02-03T15:04:56.993297", "event_type": "TTS Warmup", "duration_ms": 3047.0, "status": "success"}
+{"timestamp": "2026-02-03T15:04:59.727785", "event_type": "TTS Generation", "duration_ms": 2733.76, "char_count": 59}
+{"timestamp": "2026-02-03T15:05:28.829567", "event_type": "Gemini Logic Processing", "duration_ms": 12377.15, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T15:05:28.829567", "event_type": "Total Turn Time", "duration_ms": 12379.09, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T15:05:32.592481", "event_type": "TTS Generation", "duration_ms": 3761.95, "char_count": 86}
+{"timestamp": "2026-02-03T15:05:59.956325", "event_type": "Gemini Logic Processing", "duration_ms": 9713.82, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T15:05:59.956931", "event_type": "Total Turn Time", "duration_ms": 9715.34, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T15:06:04.696487", "event_type": "TTS Generation", "duration_ms": 4738.3, "char_count": 118}
+{"timestamp": "2026-02-03T15:06:39.130058", "event_type": "Gemini Logic Processing", "duration_ms": 7762.55, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T15:06:39.130718", "event_type": "Total Turn Time", "duration_ms": 7764.72, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T15:06:42.697076", "event_type": "TTS Generation", "duration_ms": 3565.51, "char_count": 108}
+{"timestamp": "2026-02-03T15:23:27.828827", "event_type": "TTS Warmup", "duration_ms": 0, "status": "failed", "error": "500 INTERNAL. {'error': {'code': 500, 'message': 'An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting', 'status': 'INTERNAL'}}"}
+{"timestamp": "2026-02-03T15:23:31.229441", "event_type": "TTS Generation", "duration_ms": 3400.07, "char_count": 59}
+{"timestamp": "2026-02-03T15:25:09.407648", "event_type": "TTS Warmup", "duration_ms": 1245.03, "status": "success"}
+{"timestamp": "2026-02-03T15:28:03.006232", "event_type": "TTS Warmup", "duration_ms": 1466.66, "status": "success"}
+{"timestamp": "2026-02-03T15:28:05.567255", "event_type": "TTS Generation", "duration_ms": 2560.52, "char_count": 59}
+{"timestamp": "2026-02-03T15:28:26.011392", "event_type": "Gemini Logic Processing", "duration_ms": 6257.18, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T15:28:26.012400", "event_type": "Total Turn Time", "duration_ms": 6259.72, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T15:28:30.035538", "event_type": "TTS Generation", "duration_ms": 4022.93, "char_count": 87}
+{"timestamp": "2026-02-03T15:28:53.477898", "event_type": "Gemini Logic Processing", "duration_ms": 6228.19, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T15:28:53.477898", "event_type": "Total Turn Time", "duration_ms": 6229.84, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T15:28:58.479145", "event_type": "TTS Generation", "duration_ms": 5000.24, "char_count": 121}
+{"timestamp": "2026-02-03T15:29:22.882051", "event_type": "Gemini Logic Processing", "duration_ms": 7717.91, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T15:29:22.882630", "event_type": "Total Turn Time", "duration_ms": 7718.49, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T15:29:25.500340", "event_type": "TTS Generation", "duration_ms": 2616.78, "char_count": 50}
+{"timestamp": "2026-02-03T15:30:04.422810", "event_type": "TTS Warmup", "duration_ms": 1426.39, "status": "success"}
+{"timestamp": "2026-02-03T15:30:06.991556", "event_type": "TTS Generation", "duration_ms": 2568.75, "char_count": 59}
+{"timestamp": "2026-02-03T15:30:26.035310", "event_type": "TTS Generation", "duration_ms": 3686.96, "char_count": 71}
+{"timestamp": "2026-02-03T15:34:06.264535", "event_type": "TTS Warmup", "duration_ms": 1383.45, "status": "success"}
+{"timestamp": "2026-02-03T15:34:10.333613", "event_type": "TTS Generation", "duration_ms": 3396.47, "char_count": 59}
+{"timestamp": "2026-02-03T15:34:27.632856", "event_type": "Gemini Logic Processing", "duration_ms": 4662.91, "model": "gemini-2.5-flash", "input_type": "audio"}
+{"timestamp": "2026-02-03T15:34:27.633393", "event_type": "Total Turn Time", "duration_ms": 4665.48, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T15:34:32.911238", "event_type": "TTS Generation", "duration_ms": 5276.04, "char_count": 119}
+{"timestamp": "2026-02-03T15:34:56.197139", "event_type": "Gemini Logic Processing", "duration_ms": 4171.44, "model": "gemini-2.5-flash", "input_type": "audio"}
+{"timestamp": "2026-02-03T15:34:56.197139", "event_type": "Total Turn Time", "duration_ms": 4172.96, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T15:35:00.753808", "event_type": "TTS Generation", "duration_ms": 4554.42, "char_count": 147}
+{"timestamp": "2026-02-03T15:35:22.587834", "event_type": "Gemini Logic Processing", "duration_ms": 4022.9, "model": "gemini-2.5-flash", "input_type": "audio"}
+{"timestamp": "2026-02-03T15:35:22.588755", "event_type": "Total Turn Time", "duration_ms": 4024.82, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T15:35:27.559310", "event_type": "TTS Generation", "duration_ms": 4970.05, "char_count": 99}
+{"timestamp": "2026-02-03T18:09:32.780765", "event_type": "TTS Warmup", "duration_ms": 1407.18, "status": "success"}
+{"timestamp": "2026-02-03T18:09:35.691165", "event_type": "TTS Generation", "duration_ms": 2908.77, "char_count": 59}
+{"timestamp": "2026-02-03T18:10:08.554638", "event_type": "TTS Warmup", "duration_ms": 1119.05, "status": "success"}
+{"timestamp": "2026-02-03T18:10:11.753872", "event_type": "TTS Generation", "duration_ms": 3198.23, "char_count": 59}
+{"timestamp": "2026-02-03T18:13:35.385243", "event_type": "Gemini Logic Processing", "duration_ms": 7266.83, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T18:13:35.386189", "event_type": "Total Turn Time", "duration_ms": 7268.78, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T18:13:39.002780", "event_type": "TTS Generation", "duration_ms": 3616.09, "char_count": 68}
+{"timestamp": "2026-02-03T18:13:59.271301", "event_type": "Gemini Logic Processing", "duration_ms": 7331.2, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T18:13:59.271641", "event_type": "Total Turn Time", "duration_ms": 7331.54, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T18:14:02.161118", "event_type": "TTS Generation", "duration_ms": 2888.29, "char_count": 50}
+{"timestamp": "2026-02-03T18:30:54.791901", "event_type": "TTS Warmup", "duration_ms": 1329.49, "status": "success"}
+{"timestamp": "2026-02-03T18:30:57.567032", "event_type": "TTS Generation", "duration_ms": 2774.5, "char_count": 59}
+{"timestamp": "2026-02-03T18:31:23.653990", "event_type": "Gemini Logic Processing", "duration_ms": 8590.16, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T18:31:23.653990", "event_type": "Total Turn Time", "duration_ms": 8591.16, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T18:31:26.595059", "event_type": "TTS Generation", "duration_ms": 2940.06, "char_count": 68}
+{"timestamp": "2026-02-03T18:31:47.800449", "event_type": "Gemini Logic Processing", "duration_ms": 8646.96, "model": "gemini-3-flash-preview", "input_type": "audio"}
+{"timestamp": "2026-02-03T18:31:47.800449", "event_type": "Total Turn Time", "duration_ms": 8648.09, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T18:31:50.622742", "event_type": "TTS Generation", "duration_ms": 2821.35, "char_count": 54}
+{"timestamp": "2026-02-03T18:32:01.041370", "event_type": "TTS Generation", "duration_ms": 2651.33, "char_count": 44}
+{"timestamp": "2026-02-03T18:33:08.112744", "event_type": "Gemini Logic Processing", "duration_ms": 4026.65, "model": "gemini-2.5-flash", "input_type": "audio"}
+{"timestamp": "2026-02-03T18:33:08.113725", "event_type": "Total Turn Time", "duration_ms": 4028.89, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T18:33:14.239984", "event_type": "TTS Generation", "duration_ms": 6125.74, "char_count": 132}
+{"timestamp": "2026-02-03T18:33:35.629360", "event_type": "Gemini Logic Processing", "duration_ms": 3954.38, "model": "gemini-2.5-flash", "input_type": "audio"}
+{"timestamp": "2026-02-03T18:33:35.630067", "event_type": "Total Turn Time", "duration_ms": 3956.59, "step": "process_audio_turn"}
+{"timestamp": "2026-02-03T18:33:40.285459", "event_type": "TTS Generation", "duration_ms": 4654.89, "char_count": 89}
+{"timestamp": "2026-02-03T18:33:51.961150", "event_type": "TTS Generation", "duration_ms": 2799.55, "char_count": 44}

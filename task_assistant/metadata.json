@@ -1,0 +1,7 @@
+{
+  "name": "Assistente de Tarefas PoC",
+  "description": "A voice-first task management assistant that acts as a humble student intern",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
