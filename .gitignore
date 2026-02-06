@@ -40,7 +40,6 @@ dist-ssr/
 .turbo
 
 # Local Data & Backups
-Docs/
 *.log
 *.wav
 *.mp3
