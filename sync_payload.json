@@ -1,0 +1,10 @@
+{
+    "tasks": [
+        {
+            "title": "Test Task from Backend Phase 2",
+            "description": "Testing sync endpoint",
+            "priority": 2,
+            "due_date": "2026-12-31"
+        }
+    ]
+}

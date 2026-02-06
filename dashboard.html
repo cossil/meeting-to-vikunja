@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MeetingToVikunja Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+            extend: {
+                colors: {
+                "primary": "#1337ec",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101322",
+                "neutral-100": "#f3f4f6",
+                "neutral-200": "#e5e7eb",
+                "neutral-300": "#d1d5db",
+                "neutral-500": "#6b7280",
+                "neutral-700": "#374151",
+                "neutral-900": "#111827",
+                },
+                fontFamily: {
+                "display": ["Inter", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for table container */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-neutral-900 dark:text-white font-display overflow-hidden">
+<div class="flex h-screen w-full">
+<!-- Sidebar -->
+<aside class="w-64 bg-white dark:bg-gray-900 border-r border-neutral-200 dark:border-gray-800 flex flex-col justify-between shrink-0 transition-all duration-300 ease-in-out">
+<div>
+<div class="h-16 flex items-center px-6 border-b border-neutral-100 dark:border-gray-800">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">auto_fix</span>
+</div>
+<span class="font-bold text-lg tracking-tight">MeetingToVikunja</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary font-medium transition-colors" href="#">
+<span class="material-symbols-outlined fill-1">cloud_upload</span>
+                        Batch Upload
+                    </a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-neutral-500 hover:bg-neutral-100 dark:hover:bg-gray-800 hover:text-neutral-900 dark:hover:text-white font-medium transition-colors" href="#">
+<span class="material-symbols-outlined">mic</span>
+                        Voice Agent
+                    </a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-neutral-500 hover:bg-neutral-100 dark:hover:bg-gray-800 hover:text-neutral-900 dark:hover:text-white font-medium transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+                        Settings
+                    </a>
+</div>
+</div>
+<div class="p-4 border-t border-neutral-100 dark:border-gray-800">
+<div class="flex items-center gap-3 px-3 py-2">
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-8 shrink-0 ring-2 ring-neutral-100 dark:ring-gray-700" data-alt="User profile avatar showing a smiling man" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA0SCNECU-aEmg3zQwa8r1uhvT598fLnI1tzEoTsb4CzBejZeHnQ5kloMDaYDGSRXgkcF-yz-HIHcnNf2fKefMtTJee-jsLM6wtkcZLT2WQJqjUjb9j60Wec4xhbLvVTpThNAKM4ZCAg5AFlsDkrWU5-lGkW_hE6jXlqAgJ5B_I11x1mJk6fk35fB7ltKTk-1vIThu80Iy5uceizyj2KPP-AqvzWtHnGdpLjW7AorDHFHUYNXlUvWOFoYfssPS1Jgw2Fy2S2eVPX7fm");'></div>
+<div class="flex flex-col overflow-hidden">
+<p class="text-sm font-medium truncate">Alex Morgan</p>
+<p class="text-xs text-neutral-500 dark:text-gray-400">v1.0.4</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col min-w-0 h-full relative">
+<!-- Header -->
+<header class="h-16 bg-white dark:bg-gray-900 border-b border-neutral-200 dark:border-gray-800 px-8 flex items-center justify-between shrink-0">
+<div class="flex items-center gap-2 text-neutral-500">
+<span class="material-symbols-outlined text-[20px]">home</span>
+<span class="text-neutral-300">/</span>
+<span class="text-neutral-900 dark:text-white font-medium">Dashboard</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="size-9 rounded-full hover:bg-neutral-100 dark:hover:bg-gray-800 flex items-center justify-center text-neutral-500 transition-colors relative">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-2 right-2.5 size-2 bg-red-500 rounded-full border-2 border-white dark:border-gray-900"></span>
+</button>
+<button class="size-9 rounded-full hover:bg-neutral-100 dark:hover:bg-gray-800 flex items-center justify-center text-neutral-500 transition-colors">
+<span class="material-symbols-outlined text-[20px]">help</span>
+</button>
+</div>
+</header>
+<!-- Scrollable Content -->
+<div class="flex-1 overflow-y-auto p-8 custom-scrollbar pb-24">
+<div class="max-w-6xl mx-auto flex flex-col gap-8">
+<!-- Upload Zone -->
+<div class="group relative flex flex-col items-center justify-center w-full h-48 rounded-xl border-2 border-dashed border-neutral-300 dark:border-gray-600 bg-white dark:bg-gray-800 hover:border-primary/50 hover:bg-primary/5 transition-all cursor-pointer">
+<div class="flex flex-col items-center justify-center pt-5 pb-6">
+<div class="p-3 bg-neutral-100 dark:bg-gray-700 rounded-full mb-3 group-hover:scale-110 transition-transform duration-200">
+<span class="material-symbols-outlined text-3xl text-neutral-500 dark:text-gray-400 group-hover:text-primary">cloud_upload</span>
+</div>
+<p class="mb-1 text-lg font-medium text-neutral-700 dark:text-gray-300">
+<span class="text-primary hover:underline">Click to upload</span> or drag and drop
+                            </p>
+<p class="text-sm text-neutral-500 dark:text-gray-400">Supported formats: .txt, .docx, .vtt (Max 25MB)</p>
+</div>
+<input class="hidden" id="dropzone-file" type="file"/>
+</div>
+<!-- Task Review Section -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h2 class="text-lg font-bold text-neutral-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">assignment_turned_in</span>
+                                Task Review
+                                <span class="text-xs font-normal text-neutral-500 dark:text-gray-400 bg-neutral-100 dark:bg-gray-800 px-2 py-0.5 rounded-full">2 Pending</span>
+</h2>
+<div class="flex gap-2">
+<button class="text-sm text-neutral-500 hover:text-primary font-medium px-3 py-1.5 rounded-lg hover:bg-neutral-100 dark:hover:bg-gray-800 transition-colors">Clear All</button>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-900 border border-neutral-200 dark:border-gray-800 rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-sm text-left">
+<thead class="text-xs text-neutral-500 uppercase bg-neutral-50 dark:bg-gray-800 border-b border-neutral-200 dark:border-gray-700">
+<tr>
+<th class="p-4 w-12" scope="col">
+<div class="flex items-center">
+<input class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox"/>
+</div>
+</th>
+<th class="px-6 py-3 font-semibold" scope="col">Title</th>
+<th class="px-6 py-3 font-semibold w-1/3" scope="col">Description</th>
+<th class="px-6 py-3 font-semibold" scope="col">Assignee</th>
+<th class="px-6 py-3 font-semibold" scope="col">Priority</th>
+<th class="px-6 py-3 font-semibold" scope="col">Due Date</th>
+<th class="px-6 py-3 font-semibold text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-neutral-100 dark:divide-gray-800">
+<!-- Row 1 -->
+<tr class="bg-white dark:bg-gray-900 hover:bg-neutral-50 dark:hover:bg-gray-800/50 transition-colors">
+<td class="w-4 p-4">
+<div class="flex items-center">
+<input checked="" class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox"/>
+</div>
+</td>
+<td class="px-6 py-4 font-medium text-neutral-900 dark:text-white whitespace-nowrap">
+                                                Fix login bug
+                                            </td>
+<td class="px-6 py-4 text-neutral-500 dark:text-gray-400 truncate max-w-xs">
+                                                User cannot reset password on mobile devices when using Chrome...
+                                            </td>
+<td class="px-6 py-4">
+<div class="flex -space-x-2 overflow-hidden">
+<img alt="Assignee avatar" class="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-900" data-alt="Portrait of a young man with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIEQF-zhj_I6CbOPMBnESLrSe1Z2xWP8kPsygnYrTdpQpFhoMwGMCDHTgMdc1Pj0K0rgatxqfISr1uzuu-w68MWqgOnqWWMYFDieNiRRWh92DeMM5-ilrHfw84sePOynteTG82_CBkzBlbDJto5qjgbjXxQOV5y4SzDMOLqhld6tS9ILzd9-sbYKft-37ld5wFrM0zwVr3UK8eCZGCRcPLycACnnnChwvt2yNIZEmgbvxDTbj3Q6W3n18F8sP3NYpjDXZfbULrJ7_A"/>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300 border border-red-200 dark:border-red-800">High</span>
+</td>
+<td class="px-6 py-4 text-neutral-500 dark:text-gray-400 font-mono">
+                                                Oct 24
+                                            </td>
+<td class="px-6 py-4 text-right">
+<button class="text-neutral-400 hover:text-red-500 transition-colors p-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-white dark:bg-gray-900 hover:bg-neutral-50 dark:hover:bg-gray-800/50 transition-colors">
+<td class="w-4 p-4">
+<div class="flex items-center">
+<input checked="" class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox"/>
+</div>
+</td>
+<td class="px-6 py-4 font-medium text-neutral-900 dark:text-white whitespace-nowrap">
+                                                Update privacy policy
+                                            </td>
+<td class="px-6 py-4 text-neutral-500 dark:text-gray-400 truncate max-w-xs">
+                                                Legal team sent new text to replace section 4 regarding AI usage...
+                                            </td>
+<td class="px-6 py-4">
+<div class="flex -space-x-2 overflow-hidden">
+<img alt="Assignee avatar" class="inline-block h-8 w-8 rounded-full ring-2 ring-white dark:ring-gray-900" data-alt="Portrait of a smiling woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADcxGTRnx9oiFOztMPHFbnlggx49iX75Ykxv-l3-ycmZvgpjU2lvKqoH6Y4aMLwtafEUfeRvoA8NnQ8gyoOkmLAVtO9_M9NIFF8Iwh6QILH9eVaM6clyfSctJ6aBYZ-_immAwL6KoQj3w7hD5hgG0BKl3tvh6r2ExVwb7jsF_hS7Ij3mzFfbIcLVhJfF_-0Kz5mCcRKlKtPvbXWR3MoR7PsTAD7hOsXIu8R7Z-UDVCPyr35xPb9wTTd9vF9hdSI52lIIw0M2Plj4V7"/>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300 border border-yellow-200 dark:border-yellow-800">Medium</span>
+</td>
+<td class="px-6 py-4 text-neutral-500 dark:text-gray-400 font-mono">
+                                                Oct 30
+                                            </td>
+<td class="px-6 py-4 text-right">
+<button class="text-neutral-400 hover:text-red-500 transition-colors p-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty State (Hidden, for logic expansion) -->
+<!-- <div class="flex flex-col items-center justify-center py-12 text-neutral-400">
+                                <span class="material-symbols-outlined text-4xl mb-2">content_paste_off</span>
+                                <p>No tasks extracted yet.</p>
+                            </div> -->
+</div>
+</div>
+</div>
+</div>
+<!-- Fixed Bottom Action Bar -->
+<div class="absolute bottom-0 left-0 w-full bg-white dark:bg-gray-900 border-t border-neutral-200 dark:border-gray-800 p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-10 flex items-center justify-between">
+<div class="text-sm text-neutral-500 dark:text-gray-400 pl-4">
+<span class="font-medium text-neutral-900 dark:text-white">2 tasks</span> ready for export
+                </div>
+<button class="bg-primary hover:bg-blue-700 text-white font-medium py-2.5 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center gap-2 transform active:scale-95">
+<span class="material-symbols-outlined text-[20px]">sync_alt</span>
+                    Sync to Vikunja
+                </button>
+</div>
+</main>
+</div>
+</body></html>

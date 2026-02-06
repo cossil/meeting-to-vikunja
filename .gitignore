@@ -1,17 +1,50 @@
 # Security (CRITICAL)
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
 secrets.toml
 
 # Python / Environment
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
 venv/
 .venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# JavaScript / Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+.eslintcache
+.stylelintcache
+.prettiercache
+.parcel-cache
+.next
+.nuxt
+.output
+.vercel
+.turbo
 
 # Local Data & Backups
 Docs/
 *.log
+*.wav
+*.mp3
+data/
 
 # Streamlit
 .streamlit/
@@ -19,3 +52,4 @@ Docs/
 # OS specific
 .DS_Store
 Thumbs.db
+desktop.ini
